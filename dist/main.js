@@ -5306,7 +5306,7 @@ const oneOrMoreWhiteSpaceRegexp = /\s+/;
             if (lastLine !== line) {
                 x = 0;
                 let lineDiff;
-                if (typeof lastLine !== 'number') lineDiff = line;
+                if (typeof lastLine !== 'number') lineDiff = 1;
                 else lineDiff = line - lastLine;
                 let yDiff = lineHeight * lineDiff;
                 y += yDiff;
